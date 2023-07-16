@@ -40,10 +40,8 @@ display: flex;
 justify-content: space-between;
 padding: 10px;
 }
-.logo_top img{width: 60px;height: min-content;}
-.img_2{
-width: 135px !important;;
-}
+.logo_top img{width: 20%;}
+.img_2{width: 36%!important;}
 .logo_center{
 width: 80%;
 position: absolute;
