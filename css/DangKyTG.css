@@ -128,9 +128,7 @@ margin-left: 10px;
 margin-right: 5px;
 }
 .f_lc{width: 100%;display: flex;flex-wrap: wrap;font-size: 16px;}
-.e-f{
-width: 50%;
-}
+.e-f{width: 100%;}
 button[type="submit"]{
 color:white;
 background-color:#cd1f40 ;
@@ -155,9 +153,31 @@ border: 1px solid gray;
     }
 }
 
+@media screen  and (min-width:500px) and (max-width:1000px) {
+    .container{
+        display: block;
+        height: auto;
+        background-size: cover;
+        padding: 50px 0px;
+    }
+    .ctn{
+        width: 500px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .ctn .ct-left{
+        width: 100%;
+    }
+    .ctn .ct-right{
+        width: 100%;
+    }
+    .mobile{
+        display: none;
+    }
 
+}
 
-@media screen  and (max-width:1000px) {
+@media screen  and (max-width:500px) {
     .desktop{
         display: none;
     }
@@ -171,7 +191,7 @@ border: 1px solid gray;
         background-position: top;
     }
     .mobile{
-        width: 400px;
+        width: 100%;
         background-image: url("../img/BG_left.png");
         border-radius: 10px;
         border: 1px solid #cd1f3f5d;
@@ -181,6 +201,7 @@ border: 1px solid gray;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        margin: auto;
     }
     .mb_top{
         position: relative;
@@ -205,13 +226,14 @@ border: 1px solid gray;
     .ct-right h3{
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: white;
-        margin-top: 257px;
+        margin-top: 253px;
+        font-size: 25px;
     }
     .logo_center_mb{
         width: 60%;
         margin: auto;
         position: absolute;
-        top: 11%;
+        top: 9%;
         left: 49%;
         transform: translateX(-50%);
     }
@@ -256,13 +278,13 @@ border: 1px solid gray;
             font-size:12px ;
         }
         form .f label{
-            font-size: 15px;
+            font-size: 14px;
         }
         .e-trangtri{
             width: 100%;
             position: absolute;
             z-index: 1;
-            top: 13%;
+            top: 10%;
         }
         .e-trangtri img{
             width: 80px;
@@ -315,20 +337,25 @@ border: 1px solid gray;
         }
         .logo_bottom{
             
-            height: auto;
-                        
-            display: block;
-                        
-            left: 50%;
-                        
-            top: 25%;
-                        
-            transform: translateX(-50%);
+height: auto;
+            
+display: block;
+            
+left: 50%;
+            
+top: 21%;
+            
+transform: translateX(-50%);
         }
         .logo_bottom img{
             width: 100%;
         }
-
+        .container{
+            display: block;
+            height: auto;
+            background-size: cover;
+            padding: 50px 10px;
+        }
         
 }
 
