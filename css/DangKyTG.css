@@ -40,10 +40,7 @@ display: flex;
 justify-content: space-between;
 padding: 10px;
 }
-.logo_top img{
-width: 60px;
-height: fit-content;
-}
+.logo_top img{width: 60px;height: min-content;}
 .img_2{
 width: 135px !important;;
 }
@@ -208,6 +205,8 @@ border: 1px solid gray;
         width: 100%;
     }
     .mb_top .logo_top{
+        width: 100%;
+        height: auto;
         display: flex;
         justify-content: space-between;
         padding: 10px;
