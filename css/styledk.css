@@ -1,0 +1,211 @@
+*{
+    margin:0; padding:0;box-sizing: border-box;
+    font-family: sans-serif;
+   }
+   body{
+       width: 100vw;
+       background-image: url('../images/BG.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100vw;
+       height: 100vh;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       overflow-x: hidden;
+   }
+   .container{
+       width: 90%;
+       display:flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .left{
+       width: 60%;
+   }
+   .left img{width: 100%;}
+   .right{
+       width: 40%;
+       background-color: white;
+       padding: 50px 20px;
+       border-radius: 3%;
+       overflow: hidden;
+       
+   }
+   .content{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   .title{
+       width: 100%;
+   }
+   .co{
+       position: absolute;
+       top: 0%;
+       right: 0%;
+   }
+   form{
+       margin-top: 0px;
+       width: 95%;
+   }
+   span{
+       color: #cd1f40;
+       font-weight: bold;
+       font-size: 1.6rem;
+   }
+   label{
+       font-weight: bold;
+       font-size: 1.6rem;
+   }
+   input[type="text"],input[type="number"]{
+       border: 3px solid black;
+       padding: 10px;
+       border-radius: 20px;
+       width: 100%;
+       margin-top: 10px;
+       font-size: 1.5rem;
+       font-weight: bold;
+       padding-left: 20px;
+   }
+   .f{
+       margin-top: 20px;
+   }
+   .radio{
+       padding: 5px;
+       margin-top: 5px;
+   }
+   .radio label{
+       font-size: 1.3rem;
+       font-weight: normal;
+       padding-left: 10px;
+   }
+   
+   input[type="radio"] {
+       -ms-transform: scale(1.5); /* IE 9 */
+       -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+       transform: scale(1.5);
+     }
+
+    button{
+        color: white;
+        background-color: #cd1f40;
+        border: 3px solid black;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 100%;
+        display: block;
+        border-radius:30px ;
+        cursor:pointer;
+        margin-top: 20px;
+    }
+    #popupDk{
+        width: 500px;
+        height: 200px;
+        background-color: #cd1f40;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.551);
+        border-radius: 30px;
+        border: 3px solid black;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        position: absolute;
+        top:30%;
+        flex-direction: column;
+        animation:chuyen 1s ease-in-out forwards;
+        display: none;
+
+    }
+    #popupDk.active{
+        display: flex !important;
+    }
+    #tsv{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    #tsv{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #dong{
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    #dong:hover{
+        transform: scale(1.2);
+    }
+    @keyframes chuyen {
+        0%{
+            opacity: 0;
+            top: 10%;
+        }
+        100%{
+            opacity: 1;
+            top: 30%;
+        }
+    }
+    #time{
+        opacity: 0;
+    }
+    @media only screen and (max-width: 2000px) and (min-width: 1366px) {
+        span{
+            font-size: 1.3rem;
+        }
+        label{
+            font-size: 1.3rem;
+        }
+    }
+    @media only screen and (max-width: 1366px) and (min-width: 1200px) {
+        span{
+            font-size: 0.9rem;
+        }
+        label{
+            font-size: 1rem;
+        }
+        input[type="text"],input[type="number"]{
+            font-size: 1.3rem;
+            padding: 5px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        .container{
+            width: 100%;
+            display:flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .left,.right{
+            width: 100%;
+        }
+        .co{
+            display: none;
+        }
+        span{
+            font-size: 1rem;
+        }
+        label{
+            font-size: 1rem;
+        }
+        input[type="text"],input[type="number"]{
+            font-size: 1rem;
+            padding: 5px;
+        }
+        #popupDk{
+            width: 300px;
+        }
+        
+    }
