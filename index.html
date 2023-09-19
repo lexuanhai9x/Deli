@@ -3,107 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styledk.css">
-    <title>Đăng Kí</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js"></script>
+    <title>test</title>
 </head>
 <body>
     <div class="container">
-        <div class="left">
-            <img src="./images/left.png" alt="">
+
+        <!-- // page 1  -->
+        <div class="page1">
+
+            <div class="top">
+                <img src="./img/p1_bg_t.jpg" alt="">
+                <div class="p1-icon">
+                    <img src="./img/p1_icon.png" alt="">
+                </div>
+                <div class="nut">
+                    <img src="./img/p1_button.png" alt="">
+                </div>
+                <div class="heart">
+                    <img src="./img/p1_heart.png" alt="">
+                </div>
+            </div>
+
+            <div class="foot">
+                <div class="p1-icon-b">
+                    <img src="./img/p1_icon_b.png" alt="">
+                </div>
+                <img class="p_01" src="./img/h_01.png" alt="">
+                <img class="p_02" src="./img/h_02.png" alt="">
+                
+            </div>
         </div>
-        <div class="right">
-            <div class="content">
-                <img class="title" src="./images/text.png" alt="">
-                <img class="co" src="./images/co.png" alt="">
-                <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbxrFAv16hy-oS1p2leBPKMPf2P8GzDtK-L3jOe1gX44yFUxti-lFKACU83KbtsR0e1VbA/exec">
-                    <div class="f">
-                        <label for="">Họ và tên: <span>(Trẻ dưới 13 tuổi vui lòng điền tên bố hoặc mẹ)</span></label><br>
-                        <input type="text" name="Ho_Ten" placeholder="" />
-                    </div>
-                    <div class="f">
-                        <label for="">Độ tuổi: </label><br>
-                        <input type="number" name="tuoi" placeholder="" min="1" max= 70 />
-                    </div>
-                    <div class="f">
-                        <label for="">Số điện thoại: </label><br>
-                        <input type="number" name="sdt" placeholder=""/>
-                    </div>
-                    <div class="f">
-                        <label for="">Khung giờ đăng ký trải nghiệm </label><br>
-                        <div class="radio">
-                            <input type="radio" style="color: black;background: black;" id="LB" name="thoi_gian" value="Sáng 10h00 - 12h00">
-                            <label for="LB">Sáng 10h00 - 12h00</label><br>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="_03" name="thoi_gian" value="Chiều 14h00 - 17h00">
-                            <label for="_03">Chiều 14h00 - 17h00</label><br>
-                        </div>
-                        
-                    </div>
-                    <div class="f">
-                        <label for="">Số khách tham gia trải nghiệm </label><br>
-                        <div class="radio">
-                            <input type="radio" style="color: black;background: black;" id="so2" name="so_khach" value="1 nguoi">
-                            <label for="so2">01 Người</label><br>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="_04" name="so_khach" value="2 nguoi">
-                            <label for="_04">02 Người</label><br>
-                        </div>
-                        
-                    </div>
-                    <input type="time" name="time" id="time">
-                    <button type="submit"id="submit-form">Đăng Ký Tham Gia</button>
-                </form>
+
+        <!-- // end page 1  -->
+
+
+        <div class="page2">
+            <div class="top">
+                
             </div>
         </div>
     </div>
-    <div id="popupDk">
-        <div id="tsv"></div>
-        <div id="dong">Xác Nhận</div>
-    </div>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        const textSv = document.getElementById('tsv');
-        const dong = document.getElementById('dong');
-        const popupDk = document.getElementById('popupDk');
-        const  time = document.getElementById('time');
-        const d = new Date();
-        const e = d.getHours() + ":" + d.getMinutes();
-        time.value = e;
-        // 
-        dong.addEventListener('click',()=>{
-            popupDk.classList.remove('active');
-            textSv.innerText = '';
-        })
-
-        $(document).ready(function()
-        {
-        var submit = $("button[type='submit']");
-        submit.click(function()
-        {
-        var data = $('form#test-form').serialize();
-        $.ajax({
-        type : 'GET',
-        url : 'https://script.google.com/macros/s/AKfycbxrFAv16hy-oS1p2leBPKMPf2P8GzDtK-L3jOe1gX44yFUxti-lFKACU83KbtsR0e1VbA/exec',
-        dataType:'json',
-        crossDomain : true,
-        data : data,
-        success : function(data)
-        {
-        if(data == 'false')
-        {
-            textSv.innerText = 'Bạn chưa đăng ký thành công :(';
-            popupDk.classList.add('active');
-        }else{
-            textSv.innerText = 'Chúc mừng bạn Đăng Ký Thành Công !';
-            popupDk.classList.add('active');
-        }
-        }
-        });
-        return false;
-        });
-        });
-    </script>
 </body>
 </html>
