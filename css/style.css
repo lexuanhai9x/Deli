@@ -8,18 +8,19 @@
 
 
 
-*{padding:0;margin:0;
-font-family: loveF};
+*{padding:0px;margin:0px; font-family: loveF;}
+
 body{
-    width: 100vw;
-    height: auto;
-    background-color: #fda08e;
+    background: #ffb7a8;
 }
+
 .container{
     width: 375px;
     margin:0px auto;
     background: white;
     overflow-x: hidden;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.29);
 }
 .page1{
     width: 100%;
