@@ -158,7 +158,7 @@ width: 100%;
    border: 2px solid #ffb7a8;
    position: absolute;
    transform: rotate(90deg);
-   left: -16%;
+   left: -20%;
    top:39%;
 }
 .text:nth-child(4).active{
@@ -235,6 +235,7 @@ display: none;
     width: 80%;
     /* animation-delay: 3s!important; */
     animation: anhien 3s ease-in-out forwards;
+    cursor: pointer;
 }
 @keyframes anhien {
     0%{opacity: 0;}
@@ -245,7 +246,41 @@ display: none;
     width: 75%;
 }
 
-
+.page4 .top{
+    width: 100%;
+}
+.page4 .center{
+    width: 40%;
+    margin:40px auto;
+    animation: hun 1s ease-in-out infinite ;
+}
+@keyframes hun {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.page4{
+    position: relative;
+    display: none;
+    background-color: white;
+}
+.center-bottom{
+    width: 80%;
+    margin: 20px auto;
+}
+.p4_nut{
+    position: absolute;
+    bottom:5%;
+    width:70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -273,6 +308,12 @@ display: none;
     display: block;
     animation: p2 0.5s ease-in forwards;
 }
+
+#p4.active{
+    display: block;
+    z-index: 5;
+    animation: anhien 3s ease-in-out forwards;
+}
 @keyframes p1 {
     0%{margin-left: 0%;}
     100%{margin-left: -100%;}
@@ -282,3 +323,5 @@ display: none;
     0%{margin-left: 100%;}
     100%{margin-left: 0%;}
 }
+
+
