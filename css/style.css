@@ -59,6 +59,7 @@ img{
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    cursor: pointer;
 }
 .heart{
     width: 20px;
@@ -272,6 +273,13 @@ display: none;
     background-color: white;
     transition: 0.5s;
 }
+.page5{
+    position: relative;
+    margin-left:100%;
+    transition: 0.5s;
+    display: block;
+    top: 0;
+}
 .center-bottom{
     width: 80%;
     margin: 20px auto;
@@ -285,8 +293,111 @@ display: none;
 }
 
 
-
-
+/* // page 5  */
+.page5{
+    
+}
+.page5 .top{
+    width: 100%;
+}
+.page5 .product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product .item{
+    position: relative;
+    width:40%;
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.item img.nen{
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    transition: 0.5s;
+}
+.item img.nen.active{
+    top: -100%;
+    transition: 0.5s;
+}
+.item img.nen.active2{
+    animation: chay 15s ease-in-out forwards;
+}
+@keyframes chay {
+    0%{
+        transform: scale(0.5);
+    }
+    5%{
+        transform: scale(0.7);
+    }
+    10%{
+        transform: scale(0.5);
+    }
+    15%{
+        transform: scale(0.7);
+    }
+    20%{
+        transform: scale(0.5);
+    }
+    25%{
+        transform: scale(0.7);
+    }
+    30%{
+        transform: scale(0.5);
+    }
+    35%{
+        transform: scale(0.7);
+    }
+    40%{
+        transform: scale(0.5);
+    }
+    45%{
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    55%{
+        transform: scale(0.7);
+    }
+    60%{
+        transform: scale(0.5);
+    }
+    65%{
+        transform: scale(0.7);
+    }
+    70%{
+        transform: scale(0.5);
+    }
+    75%{
+        transform: scale(0.7);
+    }
+    80%{
+        transform: scale(0.5);
+        top: 0%;
+    }
+    100%{
+        transform: scale(0.7);
+        top: -100%;
+    }
+}
+.item4 .anh{
+    opacity: 0;
+}
+.item4 .anh.active3{
+    animation: chayra 2s ease-in 13s forwards;
+}
+@keyframes chayra {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* // chuyen dong cac page  */
 .page1.active{
@@ -314,7 +425,15 @@ display: none;
 #p4.active{
     display: block;
     z-index: 5;
-    margin-left: 0;
+    margin-left: 0%;
+    background-color: white;
+    transition: 0.5s;
+
+}
+#p5.active{
+    display: block;
+    z-index: 7;
+    margin-left: 0%;
     background-color: white;
     transition: 0.5s;
 
