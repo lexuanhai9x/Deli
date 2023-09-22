@@ -268,7 +268,9 @@ display: none;
 .page4{
     position: relative;
     display: none;
+    margin-left:100%;
     background-color: white;
+    transition: 0.5s;
 }
 .center-bottom{
     width: 80%;
@@ -312,8 +314,9 @@ display: none;
 #p4.active{
     display: block;
     z-index: 5;
-    animation: anhien 3s ease-in-out forwards;
+    margin-left: 0;
     background-color: white;
+    transition: 0.5s;
 
 }
 @keyframes p1 {
