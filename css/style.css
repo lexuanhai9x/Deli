@@ -12,24 +12,37 @@
 
 body{
     background: #ffb7a8;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center
+
 }
 
 .container{
     width: 375px;
+    height: 667px;
     margin:0px auto;
     background: white;
     overflow-x: hidden;
     border: 2px solid white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.29);
+    position:relative;
 }
 .page1{
     width: 100%;
     overflow: hidden;
-
+    height: 100%;
+    /* display:none; */
 }
-.top{
+
+.page1 .top{
     /* background: #fda08e; */
     position: relative;
+    height: 50%;
+    background-image: url('../img/p1_bg_t.jpg');
+    background-size: cover;
 }
 img{
     width: 100%;
@@ -74,10 +87,15 @@ img{
 .foot{
     background-color: white;
     position: relative;
+    height: 50%;
 }
 .p1-icon-b{
     width: 80%;
     margin: 10px auto;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
 }
 .p_01,.p_02{
     position: absolute;
@@ -85,14 +103,182 @@ img{
 }
 .p_01{
     width: 23%;
-    bottom: -10%;
+    bottom: -3%;
 }
 .p_02{
-    width: 42%;
-    bottom: -21%;
+    width: 47%;
+    bottom: -17%;
     right: -7%;
 }
-/* // page 1  */
+/* // end page 1  */
+
+.page1,.page2,.page3,.page4,.page5{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position:absolute;
+}
+.page2{
+    background-image: url('../img/p2_bg.png');
+    background-size: cover;
+    display:none;
+    transition: 0.5s;
+    margin: 0%;
+}
+.page2 .top{
+width: 100%;
+}
+.p2_td{
+    width: 100%;
+    font-size: 28px;
+    color: #ffb7a8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.p2_nd{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: flex-end;
+    z-index: 4;
+}
+.p2_nd .text{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.text:nth-child(4){
+   color: #ffb7a8;
+   border: 2px solid #ffb7a8;
+   position: absolute;
+   transform: rotate(90deg);
+   left: -16%;
+   top:39%;
+}
+.text:nth-child(4).active{
+    background:#ffb7a8;
+    color: rgb(208, 82, 82);
+    border-color: rgb(222, 115, 115);
+    animation: none!important;
+}
+
+
+.p2_nd .text.active{
+    background:#ffb7a8;
+    color: rgb(208, 82, 82);
+    border-color: rgb(222, 115, 115);
+    animation: chuyendongt 0.5s ease-out forwards;
+}
+@keyframes chuyendongt {
+    0%{
+        transform:translateY(0%),scale(1);
+    }
+    100%{
+        transform:translateY(-10px) scale(1.1);
+    }
+}
+.p2_icon{
+    width:120%;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%);
+
+}
+.p2_nut{
+    width: 70%;
+    position: relative;
+   margin: auto;
+   animation: p2_nut 1.5s ease-in-out infinite;
+   cursor: pointer
+}
+@keyframes p2_nut {
+    0%{
+        transform: scale(1);
+    }
+    50%{ transform: scale(1.1);}
+    100%{ transform: scale(1);}
+}
+
+.page3{
+display: none;
+}
+.page3 .top{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.page3 .top .anh1{
+    width: 35%;
+    height: auto;
+}
+.page3 .text{
+    width: 80%;
+    margin:20px auto;
+}
+.p3_nut{
+    width: 100%;
+    margin:auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.p3n{
+    width: 80%;
+    /* animation-delay: 3s!important; */
+    animation: anhien 3s ease-in-out forwards;
+}
+@keyframes anhien {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#p3_n2{
+    margin-top: 30px;
+    width: 75%;
+}
 
 
 
+
+
+
+
+/* // chuyen dong cac page  */
+.page1.active{
+    animation: p1 0.5s ease-in forwards;
+}
+.page2.next{
+    display: block;
+    animation: p2 0.5s ease-in forwards;
+}
+
+
+
+.page2.pass{
+    display: block;
+    /* margin-left: -100%; */
+    animation: p1 0.5s ease-in forwards;
+    transition: 0.5s;
+}
+
+.page3.next{
+    display: block;
+    animation: p2 0.5s ease-in forwards;
+}
+@keyframes p1 {
+    0%{margin-left: 0%;}
+    100%{margin-left: -100%;}
+}
+
+@keyframes p2 {
+    0%{margin-left: 100%;}
+    100%{margin-left: 0%;}
+}
