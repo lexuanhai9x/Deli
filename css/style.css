@@ -313,6 +313,8 @@ display: none;
     display: block;
     z-index: 5;
     animation: anhien 3s ease-in-out forwards;
+    background-color: white;
+
 }
 @keyframes p1 {
     0%{margin-left: 0%;}
