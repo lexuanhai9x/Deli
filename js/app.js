@@ -44,7 +44,7 @@ const nen = document.getElementsByClassName('nen');
 const anh = document.getElementById('anh_db');
 console.log(nen);
 for (let j = 0; j < item.length; j++) {
-    if(j<3){
+    if(j<4){
         item[j].addEventListener('click',()=>{
             nen[j].classList.add('active');
         })
