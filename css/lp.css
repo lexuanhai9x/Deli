@@ -26,7 +26,7 @@ body{
     position:fixed;
     right: 30px;
     bottom: 50px;
-    background-color: #cd1f40;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,8 +35,8 @@ body{
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
+    color: #cd1f40;
+    border: 2px solid #cd1f40;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.334);
     animation: topb 2s ease-in-out infinite;
     z-index: 9999;
