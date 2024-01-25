@@ -117,7 +117,7 @@ body{
 
 /* phan kv banner  */
     .image-kv{
-        width: 1200px;
+        width: 100%;
     }
     .image-kv img{
         width: 100%;
@@ -595,4 +595,94 @@ button:hover{
     color: #fff;
     align-items: center;
 }
-.textf span
+@media only screen and (max-width: 1200px) {
+    .landing-page-sk{
+        width: 800px;
+    }
+    .text-ct{
+        font-size: 16px;
+    }
+    .content{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .landing-page-sk{
+        width: 400px;
+    }
+    .text-ct{
+        font-size: 12px;
+    }
+    .content{
+        width: 90%;
+    }
+    .tieude{
+        font-size: 16px;
+    }
+    .tieude2{
+        font-size: 16px;
+    }
+    .cuahang{
+        flex-direction: column;
+    }
+    .anhCH{
+        width: 100%;
+    }
+    .diadiem{
+        width: 90%;
+        margin:auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+    .lixi{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .b45{
+        width: 100%;
+    }
+    .carousel-sukien{
+        flex-direction: column-reverse;
+    }
+    .carousel-image{
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text-ct{
+        margin-bottom: 10px;
+    }
+    .content-ct{
+        margin-top: 10px;
+        padding-bottom:20px;
+    }
+    .lixi-image img{
+        box-shadow: none;
+    }
+    .anhCH img{
+        box-shadow: none;
+    }
+    .one_img{
+        width: 100%;
+    }
+    .slide_img{
+        align-items: center;
+    }
+    .event-other{
+        width: 150px;
+        font-size: 16px;
+        bottom: 20vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    
+    .marquee-content li{
+        font-size: calc(var(--marquee-height)*3/8);
+    }
+    .one_img a{
+        font-size: 16px;
+    }
+
+    
+}
