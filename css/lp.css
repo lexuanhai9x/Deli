@@ -19,6 +19,39 @@ body{
 }
 /* end background ca su kien  */
 /* ------------------------------------------------------------------------------------- */
+
+.event-other{
+    width: 200px;
+    height: 100px;
+    position:fixed;
+    right: 30px;
+    bottom: 50px;
+    background-color: #cd1f40;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.334);
+    animation: topb 2s ease-in-out infinite;
+    z-index: 9999;
+}
+@keyframes topb {
+    0%{transform: translateY(-10%);}
+    50%{transform: translateY(0%);}
+    100%{transform: translateY(-10%);}
+}
+
+
+
+
+
+
 /* style Css desktop  */
 .landing-page-sk{
     width: 1200px;
@@ -129,9 +162,7 @@ body{
         transform: scale(1);
     }
 }
-.lixi-image{
-    
-}
+
 .b45 img{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
@@ -553,3 +584,15 @@ button:hover{
     position: absolute;
     left: 50%;
 }
+.footer{
+    width: 100%;
+    
+}
+.textf{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    color: #fff;
+    align-items: center;
+}
+.textf span
