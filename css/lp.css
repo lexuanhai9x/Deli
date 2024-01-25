@@ -672,11 +672,14 @@ button:hover{
     .event-other{
         width: 150px;
         font-size: 16px;
-        bottom: 20vh;
+        bottom: 0vh;
+    }
+    .textf{
+        justify-content: center;
     }
 }
 @media only screen and (max-width: 500px){
-    
+
     .marquee-content li{
         font-size: calc(var(--marquee-height)*3/8);
     }
