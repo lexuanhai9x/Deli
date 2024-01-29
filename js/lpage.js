@@ -9,7 +9,7 @@ const nut = document.getElementById('submit-form');
         const d = new Date();
         const e = d.getHours() + ":" + d.getMinutes();
         time.value = e;
-        // 
+        
         dong.addEventListener('click',()=>{
             popUp.classList.remove('active');
             textSv.innerText = '';
@@ -26,7 +26,7 @@ const nut = document.getElementById('submit-form');
         var data = $('form#test-form').serialize();
         $.ajax({
         type : 'GET',
-        url : 'https://script.google.com/macros/s/AKfycbxrFAv16hy-oS1p2leBPKMPf2P8GzDtK-L3jOe1gX44yFUxti-lFKACU83KbtsR0e1VbA/exec',
+        url : 'https://script.google.com/macros/s/AKfycbwMpJhFYyfmIcfVvalRt9wT01rrH_Oz7hTJIVU6SWtsqXwSKXT8etCOb2IglTouVgA/exec',
         dataType:'json',
         crossDomain : true,
         data : data,
@@ -47,9 +47,6 @@ const nut = document.getElementById('submit-form');
         return false;
         });
         });
-
-
-
 
 
 //phan card

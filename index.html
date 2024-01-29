@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo_search.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/lp.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMNPQ3YE4P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-EMNPQ3YE4P');
+      </script>
     <title>Deli Sự Kiện</title>
 </head>
 <body>
@@ -32,11 +40,11 @@
         <!-- end header -->
 
 <!-- ---------------------------------------------------------------------------------------- -->
-        <!-- chinh su anh KV ow day  -->
+        <!-- chinh su anh KV ow day  anh bia -->
         <div class="image-kv">
             <img src="./images/kv_banner.jpg" alt="">
         </div>
-        <!-- ket thuc chinh su anh KV o day  -->
+        <!-- ket thuc chinh su anh KV anh bia o day   -->
         <!-- ------------------------------------------------------------------------------------------ -->
 
         <!-- phan chinh su lixi tet va link -->
@@ -79,9 +87,11 @@
                             <div class="subli">
                                 <i class="fa-solid fa-location-dot"></i> <span>AEON Hà Đông</span>
                             </div>
+
                             <div class="subli">
                                 <i class="fa-solid fa-location-dot"></i> <span>AEON Hải Phòng</span>
                             </div>
+                           
                         </li>
                     </ul>
                 </div> 
@@ -195,36 +205,41 @@
                 <div id="wait">Đang tiến hành đăng ký ...</div>
         </div>
             <div class="content">
-                <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbxrFAv16hy-oS1p2leBPKMPf2P8GzDtK-L3jOe1gX44yFUxti-lFKACU83KbtsR0e1VbA/exec">
+                <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbwMpJhFYyfmIcfVvalRt9wT01rrH_Oz7hTJIVU6SWtsqXwSKXT8etCOb2IglTouVgA/exec">
                     
                     <div class="f">
                         <label for="">Họ và tên: <span>(Trẻ dưới 13 tuổi vui lòng điền tên bố hoặc mẹ)</span></label><br>
-                        <input type="text" name="Ho_Ten" placeholder="" />
+                        <input type="text" name="Name" required placeholder="" />
                     </div>
                     <div class="f">
                         <label for="">Độ tuổi: </label><br>
-                        <input type="number" name="tuoi" placeholder="" min="1" max= 70 />
+                        <input type="number" name="Age" required />
                     </div>
                     <div class="f">
                         <label for="">Số điện thoại: </label><br>
-                        <input type="number" name="sdt" placeholder=""/>
+                        <input type="number" name="Phone" required placeholder=""/>
                     </div>
                     <div class="f">
+                        <label for="">Ngày đăng ký: </label><br>
+                        <input type="text" name="Time" required placeholder=""/>
+                    </div>
+                    <!-- <div class="f">
                         <label for="dangky">Khung giờ đăng ký: </label><br>
                         <select name="khung_gio" id="dangky">
                             <option value="">--Hãy chọn khung giờ--</option>
                             <option value="Sáng 10h00 - 12h00">Sáng 10h00 - 12h00</option>
                             <option value="Chiều 14h00 - 17h00">Chiều 14h00 - 17h00</option>
                         </select>
-                    </div>
+                    </div> -->
                     <div class="f">
-                        <label for="so_khach">Số khách tham gia trải nghiệm: </label><br>
-                        <select name="so_khach" id="so_khach">
-                            <option value="">--Hãy chọn số người--</option>
-                            <option value="01 Người">01 Người</option>
-                            <option value="02 Người">02 Người</option>
-                            <option value="03 Người">03 Người</option>
-                            <option value="04 Người">04 Người</option>
+                        <label for="Place">Địa điểm tham gia hoạt động: </label><br>
+                        <select name="Place" required id="so_khach">
+                            <option value="">--Hãy chọn địa điểm--</option>
+                            <option value="AEON Long Biên">AEON Long Biên - HN</option>
+                            <option value="AEON Hà Đông">AEON Hà Đông - HN</option>
+                            <option value="AEON Hải Phòng">AEON Hải Phòng</option>
+                            <option value="Nhà sách Phương Nam - Lê Lợi - HCM">Nhà sách Phương Nam - Lê Lợi - HCM</option>
+                            <option value="Nhà sách Phương Nam - Nguyễn Văn Bình - HCM">Nhà sách Phương Nam - Nguyễn Văn Bình - HCM</option>
                         </select>
                     </div>
                     
@@ -249,55 +264,14 @@
     </div>
 
 
-    
 
-
-
-
-
-
-
-    
-
-
-        
 
 
    <!-- Header landingpage chỉnh sửa KV ở đây nhé -->
    <script src="https://kit.fontawesome.com/d57f3ece32.js" crossorigin="anonymous"></script>
 
    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function()
-    {
-    var submit = $("button[type='submit']");
-    submit.click(function()
-    {
-    var data = $('form#test-form').serialize();
-    $.ajax({
-    type : 'GET',
-    url : 'https://script.google.com/macros/s/AKfycbxrFAv16hy-oS1p2leBPKMPf2P8GzDtK-L3jOe1gX44yFUxti-lFKACU83KbtsR0e1VbA/exec',
-    dataType:'json',
-    crossDomain : true,
-    data : data,
-    success : function(data)
-    {
-    if(data == 'false')
-    {
-        wait.classList.remove('active');
-        textSv.innerText = 'Bạn chưa đăng ký thành công :(';
-        popUp.classList.add('active');
-    }else{
-        textSv.innerText = 'Chúc mừng bạn Đăng Ký Thành Công !';
-        popUp.classList.add('active');
-        wait.classList.remove('active');
-    }
-    }
-    });
-    return false;
-    });
-    });
-    </script>
-       <script src="./js/lpage.js"></script>
+   
+    <script src="./js/lpage.js"></script>
 </body>
 </html>

@@ -502,7 +502,7 @@ button:hover{
 }
 /*ket thuc phan form dawng ky  */
 #popupDk{
-    width: 800px;
+    width: 400px;
     height: 200px;
     background: rgb(205,31,64);
     background: linear-gradient(114deg, rgba(205,31,64,1) 0%, rgba(254,129,129,1) 44%, rgba(205,31,64,1) 98%);
@@ -518,7 +518,6 @@ button:hover{
     display: none;
     left: 50%;
     transform: translateX(-50%);
-
 }
 #popUp.active #popupDk{
     display: flex !important;
@@ -581,8 +580,10 @@ button:hover{
     display: block;
 }
 #popUp{
-    position: absolute;
+    position: fixed;
+    top: 50%;
     left: 50%;
+    z-index: 99999;
 }
 .footer{
     width: 100%;
