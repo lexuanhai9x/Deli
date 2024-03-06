@@ -8,8 +8,6 @@ const nut = document.getElementById('submit-form');
         const  time = document.getElementById('time');
         const d = new Date();
         const e = d.getHours() + ":" + d.getMinutes();
-        time.value = e;
-        
         dong.addEventListener('click',()=>{
             popUp.classList.remove('active');
             textSv.innerText = '';
@@ -26,7 +24,7 @@ const nut = document.getElementById('submit-form');
         var data = $('form#test-form').serialize();
         $.ajax({
         type : 'GET',
-        url : 'https://script.google.com/macros/s/AKfycbwMpJhFYyfmIcfVvalRt9wT01rrH_Oz7hTJIVU6SWtsqXwSKXT8etCOb2IglTouVgA/exec',
+        url : 'https://script.google.com/macros/s/AKfycbxq5ioZLBj8J3VcAoTEaFLsmtOaRaq64d4xj2q4uzmXVMjBi_R20mCz7A8pBt_TB-LIgQ/exec',
         dataType:'json',
         crossDomain : true,
         data : data,

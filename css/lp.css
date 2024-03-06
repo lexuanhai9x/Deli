@@ -109,7 +109,7 @@ body{
     .text-header{
         font-size: 20px;
         font-weight: bold;
-        color:rgba(128, 128, 128, 0.487)
+        color: rgb(255 255 255);
     }
 
 /* ket thuc phan header logo va text  */
@@ -581,7 +581,7 @@ button:hover{
 }
 #popUp{
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
     z-index: 99999;
 }
@@ -682,11 +682,47 @@ button:hover{
 @media only screen and (max-width: 500px){
 
     .marquee-content li{
-        font-size: calc(var(--marquee-height)*3/8);
+        font-size: calc(var(--marquee-height)*3/11);
     }
     .one_img a{
         font-size: 16px;
     }
 
-    
+    .sukien .cuahang2{
+    width: 45%!important;
+    }
+    .cuahang2 .text{
+        font-size: 14px!important;
+    }
+}
+
+/* //fix 06032024  */
+.header-lp{
+    background-color: #cd1f40;
+}
+.sukien2 .tieude{
+    width: 100%;
+}
+.sukien2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sukien .cuahang2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    margin:5px ;
+   
+}
+.sukien .cuahang2 img{
+    width: 100%;
+}
+.cuahang2 .text{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
