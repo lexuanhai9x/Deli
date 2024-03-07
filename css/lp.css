@@ -70,6 +70,11 @@ body{
     padding: 5px 0px;
     text-align: center;
 }
+
+.ctaHead{
+    background-color: rgb(200, 200, 200)!important;
+color: black!important;
+}
 .tieude2{
     font-size: 20px;
     font-weight: bold;
@@ -79,8 +84,10 @@ body{
     padding-right: 10px;
 }
 .contentlp{
-    font-size: 16px;
+    /* text-align: left; */
+    font-size: 20px;
     padding: 10px 0px;
+    line-height: 30px;
 }
 .linewhite{
     width: 100%;
@@ -139,7 +146,7 @@ body{
 .lixi-text h2{
     text-transform: uppercase;
 }
-#lixi-cta{
+.lixi-cta{
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -151,7 +158,7 @@ body{
     display:inline-block;
     animation: scale 1.5s ease-out infinite ;
 }
-@keyframes scale {
+/* @keyframes scale {
     0%{
         transform: scale(1);
     }
@@ -161,7 +168,7 @@ body{
     100%{
         transform: scale(1);
     }
-}
+} */
 
 .b45 img{
     width: 100%;
